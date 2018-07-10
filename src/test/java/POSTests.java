@@ -15,6 +15,8 @@ public class POSTests extends POSRequestPayload {
         ASCIIChannel channel = new ASCIIChannel("10.120.100.10", 56715, packager);
 
         channel.connect();
+        
+        channel.setHeader("INSS00");
 
         channel.send(generateNetworkManagementRequestPayload());
 
