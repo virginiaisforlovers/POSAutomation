@@ -15,7 +15,7 @@ public class POSRequestPayload {
 
         ISOMsg message = new ISOMsg("0800");
         message.set(7, new SimpleDateFormat("MMddHHmmss").format(new Date()));
-        message.set(11, "000358");
+        message.set(11, "000378");
         message.set(12, new SimpleDateFormat("HHmmss").format(new Date()));
         message.set(13, new SimpleDateFormat("HHmmss").format(new Date()));
         message.set(32, "5500033");
