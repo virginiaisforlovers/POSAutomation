@@ -1,12 +1,9 @@
-package com.inss.automation.pos.data;
-
-
-
-import org.jpos.iso.ISOMsg;
+package com.inss.automation.pos;
 
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import org.jpos.iso.ISOMsg;
 
 public class POSRequestPayload {
 
