@@ -9,5 +9,8 @@
         <module name="POSTransactionAutomation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="POSTransactionAutomation" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

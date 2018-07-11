@@ -1,4 +1,5 @@
-import com.inss.automation.pos.data.POSRequestPayload;
+package com.inss.automation.pos;
+
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOPackager;
 import org.jpos.iso.channel.ASCIIChannel;

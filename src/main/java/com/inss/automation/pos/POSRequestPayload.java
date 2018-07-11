@@ -1,4 +1,4 @@
-package com.inss.automation.pos.data;
+package com.inss.automation.pos;
 
 
 
