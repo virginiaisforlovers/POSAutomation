@@ -12,21 +12,16 @@ public class POSTests extends POSRequestPayload {
     public void NetworkManagementRequestShouldBeSentSuccesfully() throws Exception {
 
         ISOPackager packager = new GenericPackager("iso87asciipackager.xml");
-
         ASCIIChannel channel = new ASCIIChannel("10.120.100.10", 56715, packager);
 
+        //Connect and Send txn
         channel.connect();
-        
         channel.setHeader("INSS00");
-
         channel.send(generateNetworkManagementRequestPayload());
 
+        //get and evaluate response body
         ISOMsg response = channel.receive();
-
         String mti = response.getMTI();
-
         System.out.println(mti);
-
-
     }
 }
