@@ -6,18 +6,16 @@ import org.jpos.iso.channel.ASCIIChannel;
 import org.jpos.iso.packager.GenericPackager;
 import org.junit.Test;
 
-public class POSTests extends PosTestsBase {
+public class PosTests extends PosTestsBase {
 
     @Test
     public void NetworkManagementRequestShouldBeSentSuccesfully() throws Exception {
 
         //Connect and Send txn
-        channel.connect();
-        channel.setHeader("INSS00");
-        channel.send(generateNetworkManagementRequestPayload());
+        asciiChannel.send(generateNetworkManagementRequestPayload());
 
         //get and evaluate response body
-        ISOMsg response = channel.receive();
+        ISOMsg response = asciiChannel.receive();
         String mti = response.getMTI();
         System.out.println(mti);
     }
