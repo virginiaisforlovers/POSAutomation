@@ -6,13 +6,10 @@ import org.jpos.iso.channel.ASCIIChannel;
 import org.jpos.iso.packager.GenericPackager;
 import org.junit.Test;
 
-public class POSTests extends POSRequestPayload {
+public class POSTests extends PosTestsBase {
 
     @Test
     public void NetworkManagementRequestShouldBeSentSuccesfully() throws Exception {
-
-        ISOPackager packager = new GenericPackager("iso87asciipackager.xml");
-        ASCIIChannel channel = new ASCIIChannel("10.120.100.10", 56715, packager);
 
         //Connect and Send txn
         channel.connect();
