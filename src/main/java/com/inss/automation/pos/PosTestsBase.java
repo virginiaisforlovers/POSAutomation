@@ -2,6 +2,7 @@ package com.inss.automation.pos;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.ISOPackager;
 import org.jpos.iso.channel.ASCIIChannel;
@@ -15,7 +16,7 @@ public class PosTestsBase {
   ASCIIChannel asciiChannel;
 
   @Before
-  public void initializePos() {
+  public void initializePos() throws Exception {
     isoPackager = new GenericPackager("iso87asciipackager.xml");
     asciiChannel = new ASCIIChannel("10.120.100.10", 56715, packager);
     asciiChannel.connect();
