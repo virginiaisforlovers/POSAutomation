@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.Properties;
 import org.junit.Test;
 
-public class PropertiesTest {
+public class PropertiesTest extends Throwable {
 
   @Test
   public void getPropertyValues() throws FileNotFoundException {
@@ -25,7 +25,7 @@ public class PropertiesTest {
 
 
       System.out.println(properties.getProperty("database_user_name"));
-
+      System.out.println("git test");
     }
 
     catch (Exception e) {
