@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/POSTransactionAutomation.iml" filepath="$PROJECT_DIR$/POSTransactionAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pos-atmn-tests.iml" filepath="$PROJECT_DIR$/pos-atmn-tests.iml" />
     </modules>
   </component>
 </project>

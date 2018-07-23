@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="POSTransactionAutomation" />
+        <module name="pos-atmn-tests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="domain" target="1.5" />
-      <module name="POSTransactionAutomation" target="1.5" />
+      <module name="pos-atmn-tests" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
