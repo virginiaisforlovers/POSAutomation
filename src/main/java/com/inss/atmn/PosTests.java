@@ -1,9 +1,6 @@
-package com.inss.automation.pos;
+package com.inss.atmn;
 
 import org.jpos.iso.ISOMsg;
-import org.jpos.iso.ISOPackager;
-import org.jpos.iso.channel.ASCIIChannel;
-import org.jpos.iso.packager.GenericPackager;
 import org.junit.Test;
 
 public class PosTests extends PosTestsBase {

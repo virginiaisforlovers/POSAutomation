@@ -1,4 +1,4 @@
-package com.inss.automation.pos;
+package com.inss.atmn;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
