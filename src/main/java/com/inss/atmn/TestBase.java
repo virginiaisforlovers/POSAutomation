@@ -6,17 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
+    WebDriver driver = new ChromeDriver();
+
 @BeforeClass
-    System.setProperty("webdriver.chrome.driver","/Users/tmaher/code/java/selenium/drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://the-internet.herokuapp.com/login");
+public void initDriver(){
+    System.setProperty("webdriver.chrome.driver","/Users/apple4u/Desktop/IT/PosExperiments/POSAutomation2/src/main/resources/chromedriver.exe");
+
+    driver.get("http://the-internet.herokuapp.com/login");
+    }
 
 public class TestBase {
 
 
-
-
 }
 
-@AfterClass
-      driver.quit();
+  @AfterClass
+  public void killDriver() {
+    driver.quit();
+  }
