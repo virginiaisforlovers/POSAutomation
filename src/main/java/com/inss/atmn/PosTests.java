@@ -1,3 +1,4 @@
+/*
 package com.inss.atmn;
 
 import org.jpos.iso.ISOMsg;
@@ -31,3 +32,4 @@ public class PosTests extends PosTestsBase {
   }
 
 }
+*/
