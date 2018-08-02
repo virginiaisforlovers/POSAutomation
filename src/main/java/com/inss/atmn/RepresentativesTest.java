@@ -3,11 +3,11 @@ package com.inss.atmn;
 import com.inss.atmn.Pages.RepresentativesPage;
 import org.junit.Test;
 
-public class RepresentativesTest {
+public class RepresentativesTest extends RepresentativesTestBase {
 
-  RepresentativesPage representativesPage = null;
   @Test
   public void testReps(){
+    driver.get("http://the-internet.herokuapp.com/login");
     representativesPage.getDistrictsByState("Arizona");
 
   }
