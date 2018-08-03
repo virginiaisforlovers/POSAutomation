@@ -16,8 +16,7 @@ public class RepresentativesTest extends RepresentativesTestBase {
   public void testReps(){
     driver.get("https://www.house.gov/representatives");
     representativesPage.getDistrictsByState("California");
+    representativesPage.getRepresentativeNameByState("California");
   }
-
-
 
 }
