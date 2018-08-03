@@ -23,7 +23,7 @@ public class PosTestsBase {
     asciiChannel.setHeader("INSS00");
   }
 
-  ISOMsg generateNetworkManagementRequestPayload() {
+    ISOMsg generateNetworkManagementRequestPayload() {
     ISOMsg isoMessage = new ISOMsg("0800");
     isoMessage.set(7, generateCurrentDateAndTime());
     isoMessage.set(11, "000378");
