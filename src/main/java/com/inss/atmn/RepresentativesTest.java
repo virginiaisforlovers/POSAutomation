@@ -12,23 +12,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RepresentativesTest extends RepresentativesTestBase {
 
-  @Before
-  public void initDriver() {
-    System.setProperty("webdriver.chrome.driver",
-        "/Users/apple4u/Desktop/IT/PosExperiments/chromedriver");
-
-    driver = new ChromeDriver();
-    representativesPage = PageFactory.initElements(driver, RepresentativesPage.class);
-  }
-
   @Test
   public void testReps(){
     driver.get("https://www.house.gov/representatives");
     representativesPage.getDistrictsByState("California");
   }
 
-  @After
-  public void killDriver() {
-    driver.quit();
-  }
+
+
 }
