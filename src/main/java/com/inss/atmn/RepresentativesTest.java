@@ -12,13 +12,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RepresentativesTest extends RepresentativesTestBase {
 
-  RepresentativesPage representativesPage;
-  protected WebDriver driver;
-
   @Before
   public void initDriver() {
-
-
     System.setProperty("webdriver.chrome.driver",
         "/Users/apple4u/Desktop/IT/PosExperiments/chromedriver");
 
@@ -29,8 +24,7 @@ public class RepresentativesTest extends RepresentativesTestBase {
   @Test
   public void testReps(){
     driver.get("https://www.house.gov/representatives");
-    representativesPage.getDistrictsByState("Arizona");
-
+    representativesPage.getDistrictsByState("California");
   }
 
   @After

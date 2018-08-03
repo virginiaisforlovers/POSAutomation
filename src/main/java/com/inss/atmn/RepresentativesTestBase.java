@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RepresentativesTestBase extends TestBase{
 
+  RepresentativesPage representativesPage;
+  protected WebDriver driver;
 
 
 
