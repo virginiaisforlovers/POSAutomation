@@ -1,5 +1,6 @@
 package com.inss.atmn;
 
+import com.inss.atmn.POJOs.OfficeListPOJO;
 import com.inss.atmn.Pages.RepresentativesPage;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,10 +15,12 @@ public class RepresentativesTestBase extends TestBase{
   protected RepresentativesPage representativesPage;
 
 
+
   @Before
   public void initPage() {
 
     representativesPage = PageFactory.initElements(driver, RepresentativesPage.class);
+    driver.get("https://www.house.gov/representatives");
   }
 
   @After

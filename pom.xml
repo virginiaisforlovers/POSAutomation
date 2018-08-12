@@ -22,7 +22,6 @@
       <artifactId>pos-domain</artifactId>
       <version>1.0.0</version>
     </dependency>
-
     <dependency>
       <groupId>org.jpos</groupId>
       <artifactId>jpos</artifactId>
