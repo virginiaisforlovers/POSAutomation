@@ -10,10 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginTestBase extends TestBase {
 
 LoginPage loginPage;
+CaseManagementPage caseManagementPage;
 
   @Before
   public void initPage() {
     loginPage = PageFactory.initElements(driver, LoginPage.class);
+    caseManagementPage = PageFactory.initElements(driver, CaseManagementPage.class);
     driver.get("https://projects.consiliencesoftware.com/mavenqa/login.do");
   }
 

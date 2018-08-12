@@ -6,8 +6,6 @@ import org.junit.Test;
 
 public class LoginTest extends LoginTestBase{
 
-CaseManagementPage caseManagementPage;
-
   @Test
   public void enterCredentialsAndSubmit() {
     loginPage.enterPassword("sa");

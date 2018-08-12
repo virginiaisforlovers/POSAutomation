@@ -29,7 +29,6 @@ public class RepresentativesTest extends RepresentativesTestBase {
       OfficeListPOJO officeListCalifornia = new OfficeListPOJO();
       officeListCalifornia.setDistrict(representativesPage.getDistrictsByState("California"));
     System.out.println(officeListCalifornia.getDistrict());
-
   }
 
 }
