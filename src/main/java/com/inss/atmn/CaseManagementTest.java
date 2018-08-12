@@ -8,8 +8,12 @@ public class CaseManagementTest extends CaseManagementTestBase {
   @Test
   public void   importPageLinkFunctional() {
     caseManagementPage.clickImportEventsLink();
-    Assert.assertTrue(caseManagementPage.getImportCasesHeaderText() == "Import Cases");
-
+    Assert.assertTrue(caseManagementPage.getImportCasesHeaderText().contains("Import Cases"));
   }
 
+  @Test
+  public void   exportPageLinkFunctional() {
+    caseManagementPage.clickExportEventsLink();
+    //Assert.assertTrue(caseManagementPage.getImportCasesHeaderText().contains("Import Cases"));
+  }
 }

@@ -11,7 +11,7 @@ public class LoginTest extends LoginTestBase{
     loginPage.enterUsername("sa");
     loginPage.enterPassword("sa123");
     loginPage.clickSubmitButton();
-    //Assert.assertTrue(caseManagementPage.createEventLink.isDisplayed());
+    Assert.assertTrue(caseManagementPage.createEventLink.isDisplayed());
   }
 
 }
