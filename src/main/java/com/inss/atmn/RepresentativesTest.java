@@ -23,16 +23,12 @@ import org.junit.Test;
 
 public class RepresentativesTest extends RepresentativesTestBase {
 
-
-
   @Test
   public void assignToPOJO() {
 
-    public methodMy (OfficeListPOJO officeCalifornia) {
       OfficeListPOJO officeListCalifornia = new OfficeListPOJO();
       officeListCalifornia.setDistrict(representativesPage.getDistrictsByState("California"));
-      String db1 = officeListCalifornia.getDistrict().get(1);
-    }
+    System.out.println(officeListCalifornia.getDistrict());
 
   }
 
