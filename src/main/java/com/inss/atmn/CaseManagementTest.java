@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class CaseManagementTest extends CaseManagementTestBase {
 
+
+
   @Test
   public void   importPageLinkFunctional() {
     caseManagementPage.clickImportEventsLink();
@@ -16,4 +18,11 @@ public class CaseManagementTest extends CaseManagementTestBase {
     caseManagementPage.clickExportEventsLink();
     //Assert.assertTrue(caseManagementPage.getImportCasesHeaderText().contains("Import Cases"));
   }
-}
+
+  public static void main(String[] args) {
+    //Utils utils = null;
+    Utils.myUtil();
+  }
+
+  }
+
