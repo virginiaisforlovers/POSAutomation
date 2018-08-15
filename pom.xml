@@ -23,6 +23,12 @@
       <version>1.0.0</version>
     </dependency>
     <dependency>
+      <groupId>com.jayway.restassured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>2.9.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jpos</groupId>
       <artifactId>jpos</artifactId>
       <version>2.1.1</version>
@@ -46,6 +52,11 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-api</artifactId>
       <version>3.11.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>3.0.7</version>
     </dependency>
 
   </dependencies>
